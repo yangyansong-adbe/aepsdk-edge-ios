@@ -5,6 +5,9 @@ platform :ios, '10.0'
 use_frameworks!
 
 workspace 'AEPEdge'
+
+pod 'SwiftLint', '0.40.0'
+
 project 'AEPEdge.xcodeproj'
 
 target 'AEPEdge' do

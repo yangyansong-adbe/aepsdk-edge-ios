@@ -74,10 +74,10 @@ install-githook:
 	git config core.hooksPath .githooks
 
 lint-autocorrect:
-	(swiftlint --fix --format)
+	(./Pods/SwiftLint/swiftlint --fix --format)
 
 lint:
-	(swiftlint lint Sources SampleApps/AEPCommerceDemoApp)
+	(./Pods/SwiftLint/swiftlint lint Sources SampleApps/AEPCommerceDemoApp)
 
 check-version:
 	(sh ./Script/version.sh $(VERSION))
